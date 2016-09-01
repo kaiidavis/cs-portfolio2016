@@ -12,7 +12,7 @@
 }
 
 h1 {
-    font-family: Bungee Monospace;
+    font-family: Faster One;
     color: darkblue;
 }
 
@@ -66,3 +66,34 @@ h1 {
  .br-33 {
     line-height: 33px;
  }
+.b-image {
+    position: relative;
+    top: -52px; 
+}
+.m-image {
+    position: relative;
+    top: -33px;
+}
+
+.t-image {
+    position: relative;
+    top: 10px;
+}
+.tl-image {
+    position: relative;
+    top: 8px;
+    left: 15px;
+}
+
+.ml-image {
+    position: relative;
+    top: 30px;
+}
+
+.bl-image {
+    position: relative;
+    top:10px;
+}
+.toptxt-image {
+    left: 3px;
+}
