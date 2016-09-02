@@ -97,3 +97,10 @@ h1 {
 .toptxt-image {
     left: 3px;
 }
+
+.bottomleft {
+    position: inherit;
+    bottom: -100px;
+    left: 4px;
+    font-size: 30px;
+}
