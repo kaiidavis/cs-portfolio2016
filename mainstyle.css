@@ -97,10 +97,8 @@
     left: 3px;
 }
 
-.bottomleft {
-    position: inherit;
-    bottom: -100px;
-    left: 4px;
+.text-caption {
+    position: static;
     font-size: 30px;
 }
 
