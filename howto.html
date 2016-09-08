@@ -1,29 +1,94 @@
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="mainstyle.css" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
 
-    <head>
-        <title> </title>
-    </head>
-    <body>
-        <!-- Navbar Starts Here -->
-        <ul id="navbar">
+<head>
+    <title> </title>
+</head>
+
+<body class="howtobackcolor">
+    <!-- Navbar Ends Here -->
+
+    <ul id="navbar">
         <li> <a href="index.html"> About Me </a></li>
         <li> <a href="hardware.html"> Hardware </a></li>
-         <li> <a href="howto.html"> How To Page </a></li>
+        <li> <a href="howto.html"> How To Page </a></li>
         <li> <a href="#"> Calculator </a></li>
         <li> <a href="#"> Todo List </a></li>
         <li> <a href="#"> Vindinium </a></li>
         <li> <a href="#"> Big Project </a></li>
     </ul>
+    <h1 class="thin-red-border header" align="center">How To Page </h1>
+    <div class="container"> 
+<div class="col-md-8 stylish-text whiteimgbacking" onmouseover="h1function()" onmouseout="h1outfunction()">How To Make The Navbar</div>
+        <span id="About-Span1"></span>
         
-     
-     
-     
-     
-     
+        <div class="col-md-8 stylish-text whiteimgbacking" onmouseover="h2function()" onmouseout="h2outfunction()">How I Made The Header</div>
+        <span id="About-Span2"></span>
         
-<!-- Navbar Ends Here -->
-    </body>
+        <div class="col-md-8 stylish-text whiteimgbacking" onmouseover="h3function()" onmouseout="h3outfunction()">How To Add A Background Pattern For Your Website</div>
+        <span id="About-Span3"></span>
+        
+        <div class="col-md-8 stylish-text whiteimgbacking" onmouseover="h4function()" onmouseout="h4outfunction()">How To Make Borders When YOu Hover Over Images</div>
+        <span id="About-Span4"></span>
+        
+        <div class="col-md-8 stylish-text whiteimgbacking" onmouseover="h5function()" onmouseout="h5outfunction()">How To Make Text Captions For Your Images</div>
+        <span id="About-Span5"></span>
+        
+        <div class="col-md-8 stylish-text whiteimgbacking" onmouseover="h6function()" onmouseout="h6outfunction()">Putting In BootStrap And Using Rows</div>
+        <span id="About-Span6"></span>
+       
+        <div class="col-md-8 stylish-text whiteimgbacking" onmouseover="h7function()" onmouseout="h7outfunction()">How To Put Images In With The Correct Classes</div>
+        <span id="About-Span7"></span>
+       
+        <div class="col-md-8 stylish-text whiteimgbacking" onmouseover="h8function()" onmouseout="h8outfunction()">Making Div Classes</div>
+        <span id="About-Span8"></span>
+       
+        <div class="col-md-8 stylish-text whiteimgbacking" onmouseover="h9function()" onmouseout="h9outfunction()">Starting JavaScript Code</div>
+        <span id="About-Span9"></span>
+        
+        <div class="col-md-8 stylish-text whiteimgbacking" onmouseover="h10function()" onmouseout="h10outfunction()">Adding Span Variables</div>
+        <span id="About-Span10"></span>
+       
+        <div class="col-md-8 stylish-text whiteimgbacking" onmouseover="h11function()" onmouseout="h11outfunction()">Getting The Text To Appear When Hovering Over Images</div>
+        <span id="About-Span11"></span>
+        
+</div>
+        <script type="text/javascript">
+      
+
+            
+            function h1function() {
+                document.getElementById("About-Span1").innerHTML = "<p class='whiteimgbacking'> First, I put in the nav bar with links to each page in an unordered list. The code to do this is &lt;ul id=&quot;navbar&quot;&gt &lt;li&gt; &lt;a href=&quot;index.html&quot;&gt; About Me &lt;/a&gt;&lt;/li&gt &lt;li&gt; &lt;a href=&quot;hardware.html&quot;&gt; Hardware &lt;/a&gt;&lt;/li&gt &lt;li&gt; &lt;a href=&quot;howto.html&quot;&gt; How To Page &lt;/a&gt;&lt;/li&gt &lt;li&gt; &lt;a href=&quot;#&quot;&gt; Calculator &lt;/a&gt;&lt;/li&gt &lt;li&gt; &lt;a href=&quot;#&quot;&gt; Todo List &lt;/a&gt;&lt;/li&gt &lt;li&gt; &lt;a href=&quot;#&quot;&gt; Vindinium &lt;/a&gt;&lt;/li&gt &lt;li&gt; &lt;a href=&quot;#&quot;&gt; Big Project &lt;/a&gt;&lt;/li&gt &lt;/ul&gt</p>";
+
+            }
+            function h1outfunction() {
+                document.getElementById("About-Span1").innerHTML = ""
+            }
+            
+                        function h2function() {
+                document.getElementById("About-Span2").innerHTML = "<p class='whiteimgbacking'> Then I made the header for the page and gave it a custom font and border by using some specific code. In the html section I used this link to bring in the custom font &lt;link href=&quot;https://fonts.googleapis.com/css?family=Faster+One&quot; rel=&quot;stylesheet&quot;&gt; Also to link my html to my css I used the link &lt;link rel=&quot;stylesheet&quot; href=&quot;mainstyle.css&quot; type=&quot;text/css&quot; /&gt; Then in css I made two different classes for the header. .header { font-family: Faster One; color: darkblue; And .thin-red-border { border-color: #A93226; border-width: 10px; border-style: solid; border-radius: 10px;<br> background-color: white; You need to put a period in front of each class because it&rsquo;s in css and put {} for each one to show the start and end of each class. Also you add semicolon at the end of each line to get the computer to understand where each line ends. Also you put on the header by using the &lt;h1 class=&rdquo;thin-red-border header&rdquo; And having it aligned by using the code align=&rdquo;center&rdquo; and having it all go together for the header code of  &lt;h1 class=&quot;thin-red-border header&quot; align=&quot;center&quot;&gt;Computer Hardware&lt;/h1&gt;</p>";
+
+            }
+            function h2outfunction() {
+                document.getElementById("About-Span2").innerHTML = ""
+            }
+            
+            
+            
+            
+            
+            
+            
+            
+        </script>
+
+
+
+        <!-- Navbar Ends Here -->
+</body>
+<script type="text/javascript" src="howto.js"></script>
+
 </html>
