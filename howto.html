@@ -31,16 +31,16 @@
         <div class="col-md-8 stylish-text whiteimgbacking" onmouseover="h3function()" onmouseout="h3outfunction()">How To Add A Background Pattern For Your Website</div>
         <span id="About-Span3"></span>
         
-        <div class="col-md-8 stylish-text whiteimgbacking" onmouseover="h4function()" onmouseout="h4outfunction()">How To Make Borders When YOu Hover Over Images</div>
+        <div class="col-md-8 stylish-text whiteimgbacking" onmouseover="h4function()" onmouseout="h4outfunction()">How To Make Borders When You Hover Over Images</div>
         <span id="About-Span4"></span>
         
-        <div class="col-md-8 stylish-text whiteimgbacking" onmouseover="h5function()" onmouseout="h5outfunction()">How To Make Text Captions For Your Images</div>
+        <div class="col-md-8 stylish-text whiteimgbacking" onmouseover="h5function()" onmouseout="h5outfunction()">Putting In BootStrap And Using Rows</div>
         <span id="About-Span5"></span>
         
-        <div class="col-md-8 stylish-text whiteimgbacking" onmouseover="h6function()" onmouseout="h6outfunction()">Putting In BootStrap And Using Rows</div>
+        <div class="col-md-8 stylish-text whiteimgbacking" onmouseover="h6function()" onmouseout="h6outfunction()">How To Put Images In With The Correct Classes</div>
         <span id="About-Span6"></span>
        
-        <div class="col-md-8 stylish-text whiteimgbacking" onmouseover="h7function()" onmouseout="h7outfunction()">How To Put Images In With The Correct Classes</div>
+        <div class="col-md-8 stylish-text whiteimgbacking" onmouseover="h7function()" onmouseout="h7outfunction()">How To Make Text Captions For Your Images</div>
         <span id="About-Span7"></span>
        
         <div class="col-md-8 stylish-text whiteimgbacking" onmouseover="h8function()" onmouseout="h8outfunction()">Making Div Classes</div>
@@ -75,15 +75,80 @@
             function h2outfunction() {
                 document.getElementById("About-Span2").innerHTML = ""
             }
+                
+                        function h3function() {
+                document.getElementById("About-Span3").innerHTML = "<p class='whiteimgbacking'> Then you would go to your <body> and make it into a class of <body class=”hardwarebackcolor”> and you have to go to css to make this class .hardwarebackcolor { background :linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px, linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px, linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px, linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px, linear-gradient(90deg, #1b1b1b 10px, transparent 10px), linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424); background-color: #131313; background-size: 20px 20px; } All this code is giving the computer information on different aspects of the pattern I used to end up with a page that looks like this </p>";
+
+            }
+            function h3outfunction() {
+                document.getElementById("About-Span3").innerHTML = "";
+            }
+            
+                      function h4function() {
+                document.getElementById("About-Span4").innerHTML = "<p class='whiteimgbacking'> I then put a &lt;div class=&rdquo;container&rdquo;&gt; to make everything at a responsive fixed width. Then to make each image I make a img class with multiple classes in it. This included .img {    border: solid 5px transparent; } .img:hover {    border-color: #802000; } .smaller-image {    width: 300px; } The .img and .img:hover allowed me to make a border visible whenever you hover over this certain image. Also the .smaller-image made the image smaller. This code will now look like     &lt;img class=&quot;img smaller-image&quot; src=&quot;The Image You Want URL&quot;&gt; </p>";
+
+            }
+            function h4outfunction() {
+                document.getElementById("About-Span4").innerHTML = "";
+            }
+            
+                      function h5function() {
+                document.getElementById("About-Span5").innerHTML = "<p class='whiteimgbacking'> Also I had bootstrap loaded in by putting this link in &lt;html&gt; &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css&quot; integrity=&quot;sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u&quot; crossorigin=&quot;anonymous&quot;&gt; With bootstrap in I could make rows by putting certain things in the .img class to get the sizes of the image at a good proportion to the text. I chose the 8/12 size for the img and have the rest of the room for the text. To do this I put .col-md-8 in the .img class to get it to a good ratio. I could have chosen different ratios to have my website look like although this ratio looked the most aesthetically pleasing. </p>";
+
+            }
+            function h5outfunction() {
+                document.getElementById("About-Span5").innerHTML = "";
+            }
+            
+             function h6function() {
+                document.getElementById("About-Span6").innerHTML = "<p class='whiteimgbacking'> Then I would put an id of img1 to get the mouse over to work in javascript which we will go over later. The img code will look like &lt;img class=&quot;img smaller-image col-md-8&quot; id=&quot;img1&quot; src=&quot;The Image You Want URL&quot;&gt;After that I put src=&rdquo; &rdquo; with the image address in the quotes. </p>";
+
+            }
+            function h6outfunction() {
+                document.getElementById("About-Span6").innerHTML = "";
+            }
+            
+             function h7function() {
+                document.getElementById("About-Span7").innerHTML = "<p class='whiteimgbacking'> Right after each img class I did a div class and put in the classes .stylish-text {    font-weight: bold;     font-style: italic;    color: #cc8800; .text-caption {    position: static;    font-size: 30px; Both of these classes are to make the text caption a different color, and having it bold and italic. Also the text-caption is to make the text larger to read it better.  </p>";
+
+            }
+            function h7outfunction() {
+                document.getElementById("About-Span7").innerHTML = "";
+            }
+            
+             function h8function() {
+                document.getElementById("About-Span8").innerHTML = "<p class='whiteimgbacking'> After this I included the words to the image caption and ended the div which will look like: &lt;div class=&quot;text-caption stylish-text&quot;&gt;Motherboard&lt;/div&gt; Then I put in the span id of span1 and then I closed the span. After this I put in many breaks in this space between each of these lines to get the text caption to line up right. This code is used for each image and text caption with the only changes of the image addresses, text captions, and the id number will increase by 1 every time. At the end of all the code you have to end the &lt;div class=&rdquo;container&rdquo; by doing &lt;/div&gt; </p>";
+
+            }
+            function h8outfunction() {
+                document.getElementById("About-Span8").innerHTML = "";
+            }
+            
+             function h9function() {
+                document.getElementById("About-Span9").innerHTML = "<p class='whiteimgbacking'>  </p>";
+
+            }
+            function h9outfunction() {
+                document.getElementById("About-Span9").innerHTML = "";
+            }
+            
+             function h10function() {
+                document.getElementById("About-Span10").innerHTML = "<p class='whiteimgbacking'>  </p>";
+
+            }
+            function h10outfunction() {
+                document.getElementById("About-Span10").innerHTML = "";
+            }
+             function h11function() {
+                document.getElementById("About-Span11").innerHTML = "<p class='whiteimgbacking'>  </p>";
+
+            }
+            function h11outfunction() {
+                document.getElementById("About-Span11").innerHTML = "";
+            }
             
             
-            
-            
-            
-            
-            
-            
-        </script>
+            </script>
 
 
 
