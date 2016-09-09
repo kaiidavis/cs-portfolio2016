@@ -149,3 +149,57 @@ background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
 #message {
     display: none;
 }
+.texthowto {
+    font-size: 20px;
+}
+.rightside {
+    text-align: right;
+}
+.smallerimagehowto {
+  height: 50px;  
+  width: 700px;
+}
+
+.smallerimagehowto1 {
+  height: 500px;  
+  width: 500px;
+}
+.smallerimagehowto2 {
+  height: 200px;  
+  width: 800px;
+}
+.smallerimagehowto3 {
+  height: 410px;  
+  width: 410px;
+}
+.textleft {
+    text-align: left;
+}
+.thin-blue-border {
+    border-color: #00264d;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: white;
+}
+.boldtext {
+    font-weight: bolder;
+}
+
+.imgleft {
+    position: relative;
+    left: -500px;
+    top: 40px;
+}
+.smallerimagehowto4 {
+  height: 400px;  
+  width: 400px;
+}
+.smallerimagehowto5 {
+  height: 400px;  
+  width: 600px;
+}
+.smallerimagehowto6 {
+  height: 500px;
+  width: 600px;
+}
