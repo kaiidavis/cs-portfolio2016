@@ -54,6 +54,9 @@
        
         <div class="col-md-8 stylish-text whiteimgbacking" onmouseover="h11function()" onmouseout="h11outfunction()">Getting The Text To Appear When Hovering Over Images</div>
         <span id="About-Span11"></span>
+        <div class="col-md-8 stylish-text whiteimgbacking" onmouseover="h12function()" onmouseout="h12outfunction()">Finishing Up</div>
+        <span id="About-Span12"></span>
+        
         
 </div>
         <script type="text/javascript">
@@ -125,7 +128,7 @@
             }
             
              function h9function() {
-                document.getElementById("About-Span9").innerHTML = "<p class='whiteimgbacking'>  </p>";
+                document.getElementById("About-Span9").innerHTML = "<p class='whiteimgbacking'> Now On To JavaScript </p>";
 
             }
             function h9outfunction() {
@@ -133,21 +136,25 @@
             }
             
              function h10function() {
-                document.getElementById("About-Span10").innerHTML = "<p class='whiteimgbacking'>  </p>";
+                document.getElementById("About-Span10").innerHTML = "<p class='whiteimgbacking'> To get the function of going over the image and getting the text to the right of it, you need to do many things in javascript. First you need to add in your var spans. For example the first span would be var span1 = document.getElementById(&ldquo;span1&rdquo;); Var is the variable you will manipulate. The reason that the beginning of document.getElementById is document is because the type of html we are using is a document html. It&rsquo;s getElementById because you are using the id to get the image or text working. In my website all 9 variables are at the top of the javascript. </p>";
 
             }
             function h10outfunction() {
                 document.getElementById("About-Span10").innerHTML = "";
             }
              function h11function() {
-                document.getElementById("About-Span11").innerHTML = "<p class='whiteimgbacking'>  </p>";
+                document.getElementById("About-Span11").innerHTML = "<p class='whiteimgbacking'> Then you need to add the var img1 = document.getElementById(&ldquo;img1&rdquo;); to get the mouseover function to work through id. Now you need to add the actual code to have your images know if the mouse is over or not. This code is img1.addEventListener(&quot;mouseover&quot;, img1function); img1.addEventListener(&quot;mouseout&quot;, img1outfunction); Img1 is used as a variable to get the computer to &ldquo;listen&rdquo; if the mouse is over the image or not which is what these commands do. Then you need it to function so you add the commands function img1function() {     span1.innerHTML = &ldquo;&lt;p class=&rsquo;whitetext aquaborder col-md-4'&gt; Text you want it to say&lt;/p&gt;&rdquo;; The classes I added are whitetext, to make the text white, aquaborder, to make the borders blue green that is dotted, and col-md-4 is from bootstrap where the last 4/12 of the space is used for the text. The code used is in the css file .whitetext {    color: white; } .aquaborder {    border-color: #004d4d;    border-width: 7px;    border-style: dotted;    border-radius: 10px; } With the code you have now, your website will look like this: The last code you need for this website is a function when the mouse is not over the image. function img1outfunction() {    span1.innerHTML = &quot;&quot;}  </p>";
 
             }
             function h11outfunction() {
                 document.getElementById("About-Span11").innerHTML = "";
             }
-            
-            
+            function h12function() {
+                document.getElementById("About-Span12").innerHTML = "<p class='whiteimgbacking'> The img1 is from the variable and id created in the past steps so now you can get it to work. This last bit of code has empty quotes because we don&rsquo;t want anything where the text used to be, making it disappear when the mouse is not over it. You will repeat this step for each image and in my case I had 9 total and the only thing you change is anything that has a statement like span1 or img1 to increasing numbers until in my case I had numbers of img9 and span9. Now the only thing you need to do is add id of img1-img9 in the image classes and span1-span9 in the div classes with the text captions. So with all this code and all different files used, you can get the website I arrived with which looks like this </p>";
+            }
+            function h12ourfunction() {
+                document.getElementById("About-Span12").innerHTML = "<p class='whiteimgbacking'> </p>";
+            }
             </script>
 
 
