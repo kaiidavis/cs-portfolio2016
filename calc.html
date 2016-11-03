@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<!-- These links include connections to bootstrap, links to my css, and a link for the special font Faster One -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="mainstyle.css" type="text/css" />
 <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
@@ -7,10 +8,10 @@
 <head>
     <title> </title>
 </head>
+<!-- This class makes the website have a custom background color because it is in the body -->
 
 <body class="calculatorbackcolor">
-    <!-- Navbar Ends Here -->
-
+    <!-- This makes an unordered list with all the links to other websites I've made -->
     <ul id="navbar">
         <li> <a href="index.html"> About Me </a></li>
         <li> <a href="hardware.html"> Hardware </a></li>
@@ -20,25 +21,29 @@
         <li> <a href="#"> Vindinium </a></li>
         <li> <a href="#"> Big Project </a></li>
     </ul>
-    
+    <!-- h1 makes the heading for the website and has two classes to make a border and change the font. It also has align="center" which centers it -->
     <h1 class="thin-red-border header" align="center"> Dropdown Calculator</h1>
+    <!-- This div class makes a border around the entire calculator using css which is why it contains all the code -->
     <div class="thin-blue-border">
-          <span class = "inputcenter thinner-black-border boldtext" name="output"  id="output"><input placeholder="Answer" type="textarea" style="width:282px" ></span>
-  </br>
-  <input placeholder="1st Value" type ="text" class = "inputcenter inputsize" name="input1" id="input1">
-  
-    <select class = "inputcenter" id="dropdown">
+        <!-- This span with input nested has the id of output to know to put the answer in this textarea which is what the input does, makes a textarea.  -->
+        <span class="inputcenter thinner-black-border boldtext" name="output" id="output"><input placeholder="Answer" type="textarea" style="width:282px" ></span>
+        </br>
+        <!-- This input is text for the first input using the id input1 to connect it to the javascript -->
+        <input placeholder="1st Value" type="text" class="inputcenter inputsize" name="input1" id="input1">
+<!-- The select class makes it so that you can choose an option and it is connected to javascript through id dropdown -->
+        <select class="inputcenter" id="dropdown">
         <option value="+">Addition</option>
         <option value="-">Subtraction</option>
         <option value="x">Multiplication</option>
         <option value="/">Division</option>
-        <option value="">Square Root</option>
-        <option value="√">Exponents</option>
+        <option value="^">Exponent</option>
+        <option value="√">Square Root</option>
     </select>
-
-    <input placeholder="2nd Value" type ="text" class = "inputcenter inputsize" name="input2" id="input2">
-      </br>
-      <button class="btn-lg buttoncenter" id="equal">Answer</button>
+<!-- This input is text type so that you can input your second value you are using and it is connected using the id input2 -->
+        <input placeholder="2nd Value" type="text" class="inputcenter inputsize" name="input2" id="input2">
+        </br>
+<!-- This button is used to register when the user wants the answer, it works through the id equal which is connected to the javascript -->
+        <button class="btn-lg buttoncenter" id="equal">Answer</button>
 
     </div>
 
@@ -46,6 +51,6 @@
 
     <!-- Navbar Ends Here -->
 </body>
-   <script type="text/javascript" src="calc.js"></script>
+<script type="text/javascript" src="calc.js"></script>
 
 </html>
