@@ -58,6 +58,13 @@
     border-style: solid;
     border-radius: 10px;
 }
+.thinner-black-border {
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 3px;
+    background-color: white;
+}
 .text-center {
     text-align: center;
     margin:auto;
@@ -149,6 +156,13 @@ background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
 #message {
     display: none;
 }
+.calculatorbackcolor {
+    background: linear-gradient(315deg, transparent 75%, #d45d55 0)-10px 0,
+    linear-gradient(45deg, transparent 75%, #d45d55 0)-10px 0,
+    linear-gradient(135deg, #a7332b 50%, transparent 0) 0 0,
+    linear-gradient(45deg, #6a201b 50%, #561a16 0) 0 0 #561a16;
+    background-size: 20px 20px;
+}
 .texthowto {
     font-size: 20px;
 }
@@ -205,4 +219,23 @@ background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
 }
 .center {
     text-align: center;
+}
+.inputsize {
+    width: 100px;
+    height: 25px;
+}
+.inputcenter {
+    position: relative;
+    top: 40%;
+    left: 40%;
+}
+.buttoncenter {
+    position: relative;
+    top: 45%;
+    left: 47%;
+}
+span {
+    width: 288px;
+    display: block;
+    height: 32px;
 }
