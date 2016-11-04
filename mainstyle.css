@@ -232,10 +232,15 @@ background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
 .buttoncenter {
     position: relative;
     top: 45%;
-    left: 47%;
+    left: 48%;
 }
-span {
-    width: 288px;
+.calculatorspan {
+    width: 316px;
     display: block;
     height: 32px;
 }
+
+.redtext {
+    color: red;
+}
+

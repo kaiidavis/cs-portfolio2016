@@ -11,8 +11,8 @@ button.addEventListener("click", buttonfunction);
 
 function buttonfunction() {
 //ParseInt analyzes a string and makes it into an integer so that it answers in values and it is set to variable value1 and value2 which will be used for the commands.
-    var value1 = parseInt(input1.value)
-    var value2 = parseInt(input2.value)
+    var value1 = parseInt(input1.value);
+    var value2 = parseInt(input2.value);
 //Each if is used for each possible option in the dropdown called functions. It states that if the dropdown funcion value is minus, it will subtract input 1 by input 2.  
     if (functions.value == "-"){
         output.innerHTML = value1 - value2;
