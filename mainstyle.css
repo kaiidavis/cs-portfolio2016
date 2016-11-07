@@ -275,7 +275,14 @@ background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
     left: 7%;
 }
 .todolistbutton {
-    position: fixed;
-    top: 22%;
-    left: 68%;
+    position: absolute;
+    top: 22.5%;
+    left: 69%;
+}
+.invisible-border {
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 3px;
+    background-color: white;
 }

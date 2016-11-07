@@ -1,41 +1,69 @@
 var input1 = document.getElementById("input1");
 var button = document.getElementById("button");
-var outputarea = document.getElementById("tasks");
+var regularoutput = document.getElementById("regularoutput");
 var dropdown = document.getElementById("dropdown");
+var goldborderoutput = document.getElementById("goldborderoutput");
+var redoutput = document.getElementById("redoutput");
+var boldoutput = document.getElementById("boldoutput");
+var underlineoutput = document.getElementById("underlineoutput");
 
 
 button.addEventListener("click", buttonfunction);
-button.addEventListener("click", buttonfunction2);
-
-function buttonfunction2() {
-    outputarea.appendChild(document.createElement('div')).innerHTML = input1.value;
-}
-
 
 function buttonfunction() {
+ 
     if (dropdown.value === "regular"){
-        outputarea.innerHTML = input1.value;
+       regularoutput.appendChild(document.createElement('div')).innerHTML = input1.value;
     }
-    
-   else if (dropdown.value === "underline"){
-        outputarea.innerHTML = input1.value;
-     input1.value = outputarea.style.textDecoration;
-     outputarea.style.textDecoration = "underline";
-    }
+ 
     else if (dropdown.value === "gb") {
-       outputarea.innerHTML = input1.value;
-       input1.value = outputarea.style.borderColor;
-       outputarea.style.borderColor = "#998200";
+      goldborderoutput.appendChild(document.createElement('div')).innerHTML = input1.value;
+       input1.value = goldborderoutput.style.borderColor;
+       goldborderoutput.style.borderColor = "#998200";
+       input1.value = "";
     }
     else if (dropdown.value === "red") {
-       outputarea.innerHTML = input1.value;
-       input1.value = outputarea.style.color;
-       outputarea.style.color = "red";
+      redoutput.appendChild(document.createElement('div')).innerHTML = input1.value;
+       input1.value = redoutput.style.color;
+       redoutput.style.color = "red";
+       input1.value = "";
     }
     else if (dropdown.value === "b"){
-         outputarea.innerHTML = input1.value;
-         input1.value = outputarea.style.fontWeight;
-        outputarea.style.fontWeight = "bold";
+         boldoutput.appendChild(document.createElement('div')).innerHTML = input1.value;
+         input1.value = boldoutput.style.fontWeight;
+        boldoutput.style.fontWeight = "bold";
+        input1.value = "";
+    }
+  else if (dropdown.value === "underline"){
+        underlineoutput.appendChild(document.createElement('div')).innerHTML = input1.value;
+     input1.value = underlineoutput.style.textDecoration;
+     underlineoutput.style.textDecoration = "underline";
+     input1.value = "";
     }
 }
 
+regularoutput.addEventListener("click", removefunction);
+function removefunction(evt) {
+    var remove = evt.target;
+    remove.parentNode.removeChild(remove);
+}
+goldborderoutput.addEventListener("click", removegoldborderfunction);
+function removegoldborderfunction(evt) {
+    var remove = evt.target;
+    remove.parentNode.removeChild(remove);
+}
+redoutput.addEventListener("click", removeredfunction);
+function removeredfunction(evt) {
+    var remove = evt.target;
+    remove.parentNode.removeChild(remove);
+}
+boldoutput.addEventListener("click", removeboldfunction);
+function removeboldfunction(evt) {
+    var remove = evt.target;
+    remove.parentNode.removeChild(remove);
+}
+underlineoutput.addEventListener("click", removeunderlinefunction);
+function removeunderlinefunction(evt) {
+    var remove = evt.target;
+    remove.parentNode.removeChild(remove);
+}
