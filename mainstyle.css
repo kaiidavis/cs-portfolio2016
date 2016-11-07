@@ -221,26 +221,61 @@ background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
     text-align: center;
 }
 .inputsize {
-    width: 100px;
-    height: 25px;
+    width: 200px;
+    height: 100px;
 }
 .inputcenter {
     position: relative;
     top: 40%;
     left: 40%;
 }
-.buttoncenter {
+.inputcenter1 {
     position: relative;
-    top: 45%;
-    left: 48%;
+    top: 40%;
+    left: 20%;
 }
+
+.inputcenter2 {
+    position: relative;
+    top: 40%;
+    left: 28%;
+}
+.inputcenter3 {
+    position: relative;
+    top: 40%;
+    left: 36%;
+}
+
 .calculatorspan {
     width: 316px;
     display: block;
-    height: 32px;
+    height: 69px;
 }
-
+.buttoncenter {
+    position: relative;
+    left: 49%;
+}
 .redtext {
     color: red;
 }
-
+.texttodolist {
+    font-size: 40px;
+}
+.textcalculator {
+    font-size: 40px;
+}
+.todolistdropdown {
+    position: relative;
+    top: 40%;
+    left: 8%;
+}
+.todolistinput {
+    position: relative;
+    top: 40%;
+    left: 7%;
+}
+.todolistbutton {
+    position: fixed;
+    top: 22%;
+    left: 68%;
+}

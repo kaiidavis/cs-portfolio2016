@@ -5,6 +5,12 @@ var dropdown = document.getElementById("dropdown");
 
 
 button.addEventListener("click", buttonfunction);
+button.addEventListener("click", buttonfunction2);
+
+function buttonfunction2() {
+    outputarea.appendChild(document.createElement('div')).innerHTML = input1.value;
+}
+
 
 function buttonfunction() {
     if (dropdown.value === "regular"){
