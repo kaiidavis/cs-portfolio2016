@@ -15,6 +15,7 @@
     font-family: Faster One;
     color: darkblue;
 }
+
 .smaller-image {
     width: 300px;
 }
@@ -39,6 +40,7 @@
     border-radius: 10px;
     background-color: white;
 }
+
 .thin-black-border {
     border-color: black;
     border-width: 12px;
@@ -46,18 +48,21 @@
     border-radius: 10px;
     background-color: white;
 }
+
 .thin-aquablue-border {
     border-color: #16A085;
     border-width: 7px;
     border-style: solid;
     border-radius: 10px;
 }
+
 .thin-lightyellow-border {
     border-color: #ffff4d;
     border-width: 7px;
     border-style: solid;
     border-radius: 10px;
 }
+
 .thinner-black-border {
     border-color: black;
     border-width: 3px;
@@ -65,17 +70,21 @@
     border-radius: 3px;
     background-color: white;
 }
+
 .text-center {
     text-align: center;
-    margin:auto;
+    margin: auto;
 }
- .br-33 {
+
+.br-33 {
     line-height: 33px;
- }
+}
+
 .b-image {
     position: relative;
-    top: -52px; 
+    top: -52px;
 }
+
 .m-image {
     position: relative;
     top: -33px;
@@ -85,6 +94,7 @@
     position: relative;
     top: 10px;
 }
+
 .tl-image {
     position: relative;
     top: 8px;
@@ -98,8 +108,9 @@
 
 .bl-image {
     position: relative;
-    top:10px;
+    top: 10px;
 }
+
 .toptxt-image {
     left: 3px;
 }
@@ -110,18 +121,19 @@
 }
 
 .stylish-text {
-    font-weight: bold; 
+    font-weight: bold;
     font-style: italic;
     color: #cc8800;
 }
+
 .hardwarebackcolor {
-background :linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px, linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px, linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px, linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px, linear-gradient(90deg, #1b1b1b 10px, transparent 10px), linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
-background-color: #131313;
-background-size: 20px 20px;
+    background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px, linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px, linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px, linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px, linear-gradient(90deg, #1b1b1b 10px, transparent 10px), linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
 }
 
 .whiteimgbacking {
-background-color: white;
+    background-color: white;
 }
 
 .whitetext {
@@ -134,61 +146,63 @@ background-color: white;
     border-style: dotted;
     border-radius: 10px;
 }
+
 .img {
     border: solid 5px transparent;
 }
+
 .img:hover {
     border-color: #802000;
 }
 
-
 .howtobackcolor {
-    background-color:#556;
-background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
-linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
-linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
-linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
-linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a), 
-linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
-background-size:80px 140px;
-background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+    background-color: #556;
+    background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a), linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+    background-size: 80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
 }
+
 #message {
     display: none;
 }
+
 .calculatorbackcolor {
-    background: linear-gradient(315deg, transparent 75%, #d45d55 0)-10px 0,
-    linear-gradient(45deg, transparent 75%, #d45d55 0)-10px 0,
-    linear-gradient(135deg, #a7332b 50%, transparent 0) 0 0,
-    linear-gradient(45deg, #6a201b 50%, #561a16 0) 0 0 #561a16;
+    background: linear-gradient(315deg, transparent 75%, #d45d55 0)-10px 0, linear-gradient(45deg, transparent 75%, #d45d55 0)-10px 0, linear-gradient(135deg, #a7332b 50%, transparent 0) 0 0, linear-gradient(45deg, #6a201b 50%, #561a16 0) 0 0 #561a16;
     background-size: 20px 20px;
 }
+
 .texthowto {
     font-size: 20px;
 }
+
 .rightside {
     text-align: left;
 }
+
 .smallerimagehowto {
-  height: 50px;  
-  width: 700px;
+    height: 50px;
+    width: 700px;
 }
 
 .smallerimagehowto1 {
-  height: 500px;  
-  width: 500px;
+    height: 500px;
+    width: 500px;
 }
+
 .smallerimagehowto2 {
-  height: 200px;  
-  width: 800px;
+    height: 200px;
+    width: 800px;
 }
+
 .smallerimagehowto3 {
-  height: 410px;  
-  width: 410px;
+    height: 410px;
+    width: 410px;
 }
+
 .textleft {
     text-align: left;
 }
+
 .thin-blue-border {
     border-color: #00264d;
     border-width: 10px;
@@ -196,6 +210,7 @@ background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
     border-radius: 10px;
     background-color: white;
 }
+
 .boldtext {
     font-weight: bolder;
 }
@@ -205,30 +220,37 @@ background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
     left: -500px;
     top: 40px;
 }
+
 .smallerimagehowto4 {
-  height: 400px;  
-  width: 400px;
+    height: 400px;
+    width: 400px;
 }
+
 .smallerimagehowto5 {
-  height: 400px;  
-  width: 600px;
+    height: 400px;
+    width: 600px;
 }
+
 .smallerimagehowto6 {
-  height: 500px;
-  width: 600px;
+    height: 500px;
+    width: 600px;
 }
+
 .center {
     text-align: center;
 }
+
 .inputsize {
     width: 200px;
     height: 100px;
 }
+
 .inputcenter {
     position: relative;
     top: 40%;
     left: 40%;
 }
+
 .inputcenter1 {
     position: relative;
     top: 40%;
@@ -240,6 +262,7 @@ background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
     top: 40%;
     left: 28%;
 }
+
 .inputcenter3 {
     position: relative;
     top: 40%;
@@ -251,47 +274,57 @@ background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
     display: block;
     height: 69px;
 }
+
 .buttoncenter {
     position: relative;
     left: 49%;
 }
+
 .redtext {
     color: red;
 }
+
 .texttodolist {
     font-size: 40px;
 }
+
 .textcalculator {
     font-size: 40px;
 }
+
 .todolistdropdown {
     position: relative;
     top: 40%;
     left: 8%;
 }
+
 .todolistinput {
     position: relative;
     top: 40%;
     left: 7%;
 }
+
 .todolistbutton {
     position: relative;
     top: -8px;
     left: 10%;
 }
+
 .invisible-border {
     border-color: transparent;
     border-width: 3px;
     border-style: solid;
     border-radius: 3px;
 }
+
 .todolistbackground {
-    background-color:silver;
-background-image: 
-radial-gradient(circle at 100% 150%, silver 24%, white 25%, white 28%, silver 29%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
-radial-gradient(circle at 0    150%, silver 24%, white 25%, white 28%, silver 29%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
-radial-gradient(circle at 50%  100%, white 10%, silver 11%, silver 23%, white 24%, white 30%, silver 31%, silver 43%, white 44%, white 50%, silver 51%, silver 63%, white 64%, white 71%, transparent 71%, transparent),
-radial-gradient(circle at 100% 50%, white 5%, silver 6%, silver 15%, white 16%, white 20%, silver 21%, silver 30%, white 31%, white 35%, silver 36%, silver 45%, white 46%, white 49%, transparent 50%, transparent),
-radial-gradient(circle at 0    50%, white 5%, silver 6%, silver 15%, white 16%, white 20%, silver 21%, silver 30%, white 31%, white 35%, silver 36%, silver 45%, white 46%, white 49%, transparent 50%, transparent);
-background-size:100px 50px;
+    background-color: silver;
+    background-image: radial-gradient(circle at 100% 150%, silver 24%, white 25%, white 28%, silver 29%, silver 36%, white 36%, white 40%, transparent 40%, transparent), radial-gradient(circle at 0 150%, silver 24%, white 25%, white 28%, silver 29%, silver 36%, white 36%, white 40%, transparent 40%, transparent), radial-gradient(circle at 50% 100%, white 10%, silver 11%, silver 23%, white 24%, white 30%, silver 31%, silver 43%, white 44%, white 50%, silver 51%, silver 63%, white 64%, white 71%, transparent 71%, transparent), radial-gradient(circle at 100% 50%, white 5%, silver 6%, silver 15%, white 16%, white 20%, silver 21%, silver 30%, white 31%, white 35%, silver 36%, silver 45%, white 46%, white 49%, transparent 50%, transparent), radial-gradient(circle at 0 50%, white 5%, silver 6%, silver 15%, white 16%, white 20%, silver 21%, silver 30%, white 31%, white 35%, silver 36%, silver 45%, white 46%, white 49%, transparent 50%, transparent);
+    background-size: 100px 50px;
+}
+
+.todolistremovebutton {
+    position: absolute;
+    top: 33.5%;
+    left: 85%;
 }
