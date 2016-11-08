@@ -1,5 +1,5 @@
-var input1 = document.getElementById("input1");
-var button = document.getElementById("button");
+var todolistinputbox = document.getElementById("todolistinputbox");
+var submitbutton = document.getElementById("submitbutton");
 var regularoutput = document.getElementById("regularoutput");
 var dropdown = document.getElementById("dropdown");
 var goldborderoutput = document.getElementById("goldborderoutput");
@@ -8,39 +8,62 @@ var boldoutput = document.getElementById("boldoutput");
 var underlineoutput = document.getElementById("underlineoutput");
 
 
-button.addEventListener("click", buttonfunction);
+
+submitbutton.addEventListener("click", buttonfunction);
 
 function buttonfunction() {
  
     if (dropdown.value === "regular"){
-       regularoutput.appendChild(document.createElement('div')).innerHTML = input1.value;
+       regularoutput.appendChild(document.createElement('div')).innerHTML = todolistinputbox.value;
+       regularoutput.style.backgroundColor = "white";
+       todolistinputbox.value = "";
     }
  
     else if (dropdown.value === "gb") {
-      goldborderoutput.appendChild(document.createElement('div')).innerHTML = input1.value;
-       input1.value = goldborderoutput.style.borderColor;
+      goldborderoutput.appendChild(document.createElement('div')).innerHTML = todolistinputbox.value;
+       todolistinputbox.value = goldborderoutput.style.borderColor;
        goldborderoutput.style.borderColor = "#998200";
-       input1.value = "";
+       goldborderoutput.style.backgroundColor = "white";
+       todolistinputbox.value = "";
     }
     else if (dropdown.value === "red") {
-      redoutput.appendChild(document.createElement('div')).innerHTML = input1.value;
-       input1.value = redoutput.style.color;
+      redoutput.appendChild(document.createElement('div')).innerHTML = todolistinputbox.value;
+       todolistinputbox.value = redoutput.style.color;
        redoutput.style.color = "red";
-       input1.value = "";
+       redoutput.style.backgroundColor = "white";
+       todolistinputbox.value = "";
     }
     else if (dropdown.value === "b"){
-         boldoutput.appendChild(document.createElement('div')).innerHTML = input1.value;
-         input1.value = boldoutput.style.fontWeight;
+         boldoutput.appendChild(document.createElement('div')).innerHTML = todolistinputbox.value;
+         todolistinputbox.value = boldoutput.style.fontWeight;
         boldoutput.style.fontWeight = "bold";
-        input1.value = "";
+        boldoutput.style.backgroundColor = "white";
+        todolistinputbox.value = "";
     }
   else if (dropdown.value === "underline"){
-        underlineoutput.appendChild(document.createElement('div')).innerHTML = input1.value;
-     input1.value = underlineoutput.style.textDecoration;
+        underlineoutput.appendChild(document.createElement('div')).innerHTML = todolistinputbox.value;
+     todolistinputbox.value = underlineoutput.style.textDecoration;
      underlineoutput.style.textDecoration = "underline";
-     input1.value = "";
+     underlineoutput.style.backgroundColor = "white";
+     todolistinputbox.value = "";
     }
 }
+/*
+regularoutput.addEventListener("click", strikeremovefunction);
+function strikeremovefunction () {
+if (regularoutput.value === "") {
+regularoutput.style.textDecoration = "line-through";
+
+
+}
+
+else if (regularoutput.value === "") {
+    var remove = event.target;
+    remove.parentNode.removeChild(remove);
+
+}
+}
+*/
 
 regularoutput.addEventListener("click", removefunction);
 function removefunction(evt) {

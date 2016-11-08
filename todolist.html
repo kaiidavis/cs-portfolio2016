@@ -8,7 +8,7 @@
     <title> </title>
 </head>
 
-<body class="">
+<body class="todolistbackground">
    
 
     <ul id="navbar">
@@ -22,25 +22,21 @@
     </ul>
 
 <h1 class="thin-red-border header" align="center">To Do List</h1>
-  <input type="text" class="todolistinput texttodolist" name="input1" id="input1">
+  <input type="text" class="todolistinput texttodolist" name="todolistinputbox" id="todolistinputbox">
   <select class="todolistdropdown texttodolist" id="dropdown">
       <option value="regular">Regular</option>
-      <option class="thin-gold-border" value="gb" id="gb">Gold Border</option>
       <option class="redtext" value="red">Red</option>
       <option class="boldtext" value="b">Bold</option>
       <option value="underline">Underline</option>
-      
-      
-      
+      <option class="thin-gold-border" value="gb" id="gb">Gold Border</option>
   </select>
   
- <button class="btn-lg todolistbutton" id="button">Submit</button>
- <div class="container center texttodolist" id="regularoutput"></div>
-<div class="container invisible-border center texttodolist" id="goldborderoutput"></div>
-<div class="container center texttodolist" id="redoutput"></div>
-<div class="container center texttodolist" id="boldoutput"></div>
-<div class="container center texttodolist" id="underlineoutput"></div>
-    
+<button class="btn-lg todolistbutton" id="submitbutton">Submit</button>
+<div class="container invisible-border center texttodolist" id="regularoutput"></div>
+<div class="container invisible-border center texttodolist" id="redoutput"></div>
+<div class="container invisible-border center texttodolist" id="boldoutput"></div>
+<div class="container invisible-border center texttodolist" id="underlineoutput"></div>
+<div class="container invisible-border center texttodolist" id="goldborderoutput"></div>  
     
 </body>
 <script type="text/javascript" src="todolist.js"></script>

@@ -27,12 +27,12 @@
     <!-- This div class makes a border around the entire calculator using css which is why it contains all the code -->
     <div class="thin-blue-border">
         <!-- This span with input nested has the id of output to know to put the answer in this textarea which is what the input does, makes a textarea.  -->
-        <span class="inputcenter thinner-black-border boldtext calculatorspan textcalculator center" name="output" id="output"><input placeholder="Answer" type="textarea" style="width:310px" ></span>
+        <span class="inputcenter thinner-black-border boldtext calculatorspan textcalculator center" name="answeroutput" id="answeroutput"><input placeholder="Answer" type="textarea" style="width:310px" ></span>
         </br>
         <!-- This input is text for the first input using the id input1 to connect it to the javascript -->
-        <input placeholder="1st Value" type="text" class="inputcenter1 inputsize textcalculator" name="input1" id="input1">
+        <input placeholder="1st Value" type="text" class="inputcenter1 inputsize textcalculator" name="firstvalue" id="firstvalue">
 <!-- The select class makes it so that you can choose an option and it is connected to javascript through id dropdown -->
-        <select class="inputcenter2 textcalculator" id="dropdown">
+        <select class="inputcenter2 textcalculator" id="functiondropdown">
         <option value="+">Addition</option>
         <option value="-">Subtraction</option>
         <option value="x">Multiplication</option>
@@ -41,10 +41,10 @@
         <option value="√">Square Root</option>
     </select>
 <!-- This input is text type so that you can input your second value you are using and it is connected using the id input2 -->
-        <input placeholder="2nd Value" type="text" class="inputcenter3 inputsize textcalculator" name="input2" id="input2">
+        <input placeholder="2nd Value" type="text" class="inputcenter3 inputsize textcalculator" name="secondvalue" id="secondvalue">
         </br>
 <!-- This button is used to register when the user wants the answer, it works through the id equal which is connected to the javascript -->
-        <button class="btn-lg buttoncenter" id="equal">Answer</button>
+        <button class="btn-lg buttoncenter" id="equalsbutton">Answer</button>
 
     </div>
 
