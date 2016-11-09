@@ -6,7 +6,9 @@ var goldborderoutput = document.getElementById("goldborderoutput");
 var redoutput = document.getElementById("redoutput");
 var boldoutput = document.getElementById("boldoutput");
 var underlineoutput = document.getElementById("underlineoutput");
-var removebutton = document.getElementById("removebutton");
+var removingbutton = document.createElement('button');
+var underlinebtn = document.createElement('button');
+
 
 
 
@@ -18,7 +20,13 @@ function buttonfunction() {
         regularoutput.appendChild(document.createElement('div')).innerHTML = todolistinputbox.value;
         regularoutput.style.backgroundColor = "white";
         todolistinputbox.value = "";
-        regularoutput.appendChild(document.createElement('button')).innerHTML = "remove";
+regularoutput.appendChild(removingbutton).innerHTML = "Click button to take delete safety off";
+regularoutput.appendChild(underlinebtn).innerHTML = "Click button to underline and remove safety";
+        /*
+        var removingbutton = document.createElement("button")
+        removingbutton.setAttribute("id", removingbuttons)
+        regularoutput.appendChild(document.createElement(removingbutton)).innerHTML = "remove";*/
+        
     }
 
     else if (dropdown.value === "gb") {
@@ -51,17 +59,17 @@ function buttonfunction() {
     }
 }
 
-regularoutput.addEventListener("click", strikefunction);
-function strikefunction () {
+underlinebtn.addEventListener("click", strikefunction);
+function strikefunction (evt) {
 regularoutput.style.textDecoration = "line-through";
-
+var removes = evt.target;
+removes.parentNode.removeChild(removes) in regularoutput.addEventListener("click", strikefunction);
 
 }
-
-removebutton.addEventListener("click", removefunction);
-function removefunction (event) {
-    var remove = event.target;
-    remove.parentNode.removeChild(regularoutput);
+removingbutton.addEventListener("click", removefunction);
+function removefunction (evt){
+    var remove = evt.target;
+remove.parentNode.removeChild(remove) in regularoutput.addEventListener("click", removefunction);
 }
 
 
