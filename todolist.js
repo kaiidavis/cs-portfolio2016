@@ -35,8 +35,9 @@ function buttonfunction() {
 //The first part of this if statement is when the dropdown is set on regular. It uses the regularoutput, which is the div, and uses append Child, adding something on, a element div, which is a HTML element. It is equal to the input, todolistinputbox, so that whatever is in the input and it has regular selected, which output what was put in.
     if (dropdown.value === "regular") {
         regularoutput.appendChild(document.createElement('div')).innerHTML = todolistinputbox.value;
-//This says that the output will have a style change on the background color to make it white so that you can see the text being outputted.
+//This says that the output will have a style change on the background color to make it white so that you can see the text being outputted. Also it sets the text decoration to nothing to reset the strikethrough actions after deleting it on the to do list. 
         regularoutput.style.backgroundColor = "white";
+        regularoutput.style.textDecoration = "";
 //This line is used to make the inputbox go back to empty after hitting the sumbitbutton and putting the text into the list. 
         todolistinputbox.value = "";
 //These two lines are putting the button add on using appendChild in the output area. The parenthesis is from the var for each button when it was creating elements written in the var section. The button is a html aspect which is why it has .innerHTML. After that it equals to whatever you want the text to be.
@@ -49,6 +50,7 @@ regularoutput.appendChild(regularstrikebtn).innerHTML = "Click button to make th
         todolistinputbox.value = goldborderoutput.style.borderColor;
         goldborderoutput.style.borderColor = "#998200";
         goldborderoutput.style.backgroundColor = "white";
+        goldborderoutput.style.textDecoration = "";
         todolistinputbox.value = "";
 goldborderoutput.appendChild(goldborderremovingbutton).innerHTML = "Click button to take safety off";
 goldborderoutput.appendChild(goldborderstrikebtn).innerHTML = "Click button to make the list strikethrough and remove safety";
@@ -58,6 +60,7 @@ goldborderoutput.appendChild(goldborderstrikebtn).innerHTML = "Click button to m
         todolistinputbox.value = redoutput.style.color;
         redoutput.style.color = "red";
         redoutput.style.backgroundColor = "white";
+        redoutput.style.textDecoration = "";
         todolistinputbox.value = "";
 redoutput.appendChild(redremovingbutton).innerHTML = "Click button to take safety off";
 redoutput.appendChild(redstrikebtn).innerHTML = "Click button to make the list strikethrough and remove safety";
@@ -67,6 +70,7 @@ redoutput.appendChild(redstrikebtn).innerHTML = "Click button to make the list s
         todolistinputbox.value = boldoutput.style.fontWeight;
         boldoutput.style.fontWeight = "bold";
         boldoutput.style.backgroundColor = "white";
+        boldoutput.style.textDecoration ="";
         todolistinputbox.value = "";
 boldoutput.appendChild(boldremovingbutton).innerHTML = "Click button to take safety off";
 boldoutput.appendChild(boldstrikebtn).innerHTML = "Click button to make the list strikethrough and remove safety";
@@ -150,6 +154,39 @@ function underlineremovefunction (evt){
     var remove = evt.target;
 remove.parentNode.removeChild(remove) in underlineoutput.addEventListener("click", underlineremovefunction);
 }
-
-
-
+//This function listens for when the mouse is over the output div and waits for when there is no text content so that the background color of white being made when things are being added to the list go away when the mouse goes over it when the text is all deleted.
+regularoutput.addEventListener("mouseover", regularinvisibleborderfunction);
+function regularinvisibleborderfunction () {
+    if (regularoutput.textContent === "") {
+        regularoutput.style.backgroundColor = "transparent";
+        regularoutput.style.borderColor = "transparent";
+}
+}
+goldborderoutput.addEventListener("mouseover", goldborderinvisibleborderfunction);
+function goldborderinvisibleborderfunction () {
+    if (goldborderoutput.textContent === "") {
+        goldborderoutput.style.backgroundColor = "transparent";
+        goldborderoutput.style.borderColor = "transparent";
+}
+}
+redoutput.addEventListener("mouseover", redinvisibleborderfunction);
+function redinvisibleborderfunction () {
+    if (redoutput.textContent === "") {
+        redoutput.style.backgroundColor = "transparent";
+        redoutput.style.borderColor = "transparent";
+}
+}
+boldoutput.addEventListener("mouseover", boldinvisibleborderfunction);
+function boldinvisibleborderfunction () {
+    if (boldoutput.textContent === "") {
+        boldoutput.style.backgroundColor = "transparent";
+        boldoutput.style.borderColor = "transparent";
+}
+}
+underlineoutput.addEventListener("mouseover", underlineinvisibleborderfunction);
+function underlineinvisibleborderfunction () {
+    if (underlineoutput.textContent === "") {
+        underlineoutput.style.backgroundColor = "transparent";
+        underlineoutput.style.borderColor = "transparent";
+}
+}
