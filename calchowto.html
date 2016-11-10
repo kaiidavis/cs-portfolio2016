@@ -123,10 +123,40 @@
 &lt;/br&gt;
         &lt;button class=&quot;btn-lg buttoncenter&quot; id=&quot;equalsbutton&quot;&gt;Answer&lt;/button&gt;</p>
 <h2>Now to Javascript</h2>
-<p></p>
-
-
-
+<p>The five beginning variables, called var, you need to make are document.getElementById with the id from each of the five aspects from the html, first and second inputs called firstvalue and secondvalue, the &lt;select&gt; called functiondropdown, the span called answeroutput, and the button called equalsbutton. The variable name is the same as the id. The code is called 
+var firstvalue = document.getElementById(&quot;firstvalue&quot;);
+var secondvalue = document.getElementById(&quot;secondvalue&quot;);
+var functiondropdown = document.getElementById(&quot;functiondropdown&quot;);
+var answeroutput = document.getElementById(&quot;answeroutput&quot;);
+var equalsbutton = document.getElementById(&quot;equalsbutton&quot;);</p>
+<p>Next is making the event listener to listen for a click on the button to activate the buttonfunction(). The code for this is 
+equalsbutton.addEventListener(&quot;click&quot;, buttonfunction);
+</p>
+<p>First make two variables inside the function buttonfunction called value1 and value2 that is equal to firstvalue.value and secondvalue.value with parseInt outside the parenthesis. parseInt is used to analyse the string and output an integer which is needed for math operations. This code is 
+  var value1 = parseInt(firstvalue.value);
+  var value2 = parseInt(secondvalue.value);</p>
+<p>Now you need to work on the if and else if statements based on which dropdown option is selected. First is subtraction so you make an if statement in parenthesis with functiondropdown.value equal to - in quotation marks. If the select is set to - then you want it to subtract so you set the two values, value1 and value2 that we made earlier and subtract them to create this math function. Then you need it equal to the output in html so that it puts the answer in the span. This code is 
+ if (functiondropdown.value == &quot;-&quot;){
+        answeroutput.innerHTML = value1 - value2;
+    }</p>
+<p>The other simple functions +,x,/ are identical to this except they are else if statements which means also if this happens and the functiondropdown.value == changes to one of these symbols and value1 (the symbol for this action) and value2. The code is 
+else if  (functiondropdown.value == &quot;+&quot;){
+        answeroutput.innerHTML = value1 + value2;
+    }
+    else if  (functiondropdown.value == &quot;/&quot;){
+        answeroutput.innerHTML = value1 / value2;
+    }
+    else if  (functiondropdown.value == &quot;x&quot;){
+        answeroutput.innerHTML = value1 * value2;
+    }</p>
+<p>Finally, you need the last two else if statements for squareroot and exponent. The functiondrop.value will equal √ for squareroot because that is the value set in the options and ^ is exponent because that is what is set in the options. answeroutput.innerHTML will be equal to Math.sqrt(value2) because Math.sqrt is the command javascript understands to squareroot a number and value2 is in the inside because of having asthetics of taking the number inputted on the right of the calculator. Math.pow(value1, value2) is used for exponent because Math.pow is what javascript understands to exponent something. Again value1 is telling to the power of with value2 being the number that is growing exponentially for asthetics and these could be switched if you wanted to. Then you end the function by putting the end brackets after the last else if statement. The code for these two last lines of code is
+else if  (functiondropdown.value == &quot;&radic;&quot;){
+        answeroutput.innerHTML = Math.sqrt(value2);
+    }
+else if  (functiondropdown.value == &quot;^&quot;){
+        answeroutput.innerHTML = Math.pow(value1, value2);
+}
+}</p>
 
 
 </body>
