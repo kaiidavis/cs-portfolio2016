@@ -8,7 +8,7 @@
     <title> </title>
 </head>
 
-<body class="">
+<body class="calculatorhowtopagebackcolor">
    
 
     <ul id="navbar">
@@ -23,140 +23,54 @@
     </ul>
 
 <h1 class="thin-red-border header" align="center">Calculator How To Page</h1>
-<h2>Starting With HTML</h2>
+<h2 class="subheader center">Starting With HTML</h2>
 
-<p>Inside the html at the top, I have it linked to bootstrap, my mainstyle.css and a link to a special font. This code is </p>
-<textarea>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css&quot; integrity=&quot;sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u&quot; crossorigin=&quot;anonymous&quot;&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;mainstyle.css&quot; type=&quot;text/css&quot; /&gt;
-&lt;link href=&quot;https://fonts.googleapis.com/css?family=Faster+One&quot; rel=&quot;stylesheet&quot;&gt;</textarea>
-<p>Then I added a class to the body to give to the entire page called calculatorbackcolor and the code for it in css is </p>
-<textarea>.calculatorbackcolor {
-    background: linear-gradient(315deg, transparent 75%, #d45d55 0)-10px 0, linear-gradient(45deg, transparent 75%, #d45d55 0)-10px 0, linear-gradient(135deg, #a7332b 50%, transparent 0) 0 0, linear-gradient(45deg, #6a201b 50%, #561a16 0) 0 0 #561a16;
-    background-size: 20px 20px;
-}</textarea>
-<p>Next is making the navbar by making an unordered list with line items for each one and has href to link between the different places I have made. The code for the navbar is </p>
-<textarea>&lt;ul id=&quot;navbar&quot;&gt;
-        &lt;li&gt; &lt;a href=&quot;index.html&quot;&gt; About Me &lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt; &lt;a href=&quot;hardware.html&quot;&gt; Hardware &lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt; &lt;a href=&quot;howto.html&quot;&gt; How To Page &lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt; &lt;a href=&quot;calc.html&quot;&gt; Calculator &lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt; &lt;a href=&quot;todolist.html&quot;&gt; Todo List &lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt; &lt;a href=&quot;calchowto.html&quot;&gt; Calculator How To Page &lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt; &lt;a href=&quot;#&quot;&gt; Vindinium &lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt; &lt;a href=&quot;#&quot;&gt; Big Project &lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;</textarea>
-<p>To make the header for the page I used a h1 with the thin-red-border class and header class. It has align=center to center the text and it has the heading text of dropdown calculator. The css for the effects made to the heading is </p>
-<textarea>.thin-red-border {
-    border-color: #A93226;
-    border-width: 10px;
-    border-style: solid;
-    border-radius: 10px;
-    background-color: white;
-}
-.header {
-    font-family: Faster One;
-    color: darkblue;
-}</textarea>
-<p>A div class of thin-blue-border is made to surround the entire calculator and all of it's contents in a blue border. The css is </p>
-<textarea>.thin-blue-border {
-    border-color: #00264d;
-    border-width: 10px;
-    border-style: solid;
-    border-radius: 10px;
-    background-color: white;
-}</textarea>
-<p>Next I made a span class with an input inside of it to give it a placeholder of answer while having the answer output to the span. It has many classes inputcenter which centers the span, thinner-black-border adds the border around the span, boldtext is to make the outputting numbers bold, calculatorspan changes the width and height to be the same as the input text size, textcalculator is for the font size, and center is used to center the answer. Then there is a &lt;/br&gt; to make a space between the answerbox and everything else. The css used for the classes are </p>
-<textarea>.inputcenter {
-    position: relative;
-    top: 40%;
-    left: 40%;
-}
-.thinner-black-border {
-    border-color: black;
-    border-width: 3px;
-    border-style: solid;
-    border-radius: 3px;
-    background-color: white;
-}
-.boldtext {
-    font-weight: bolder;
-}
-.calculatorspan {
-    width: 316px;
-    display: block;
-    height: 69px;
-}
-.textcalculator {
-    font-size: 40px;
-}
-.center {
-    text-align: center;
-}
-</textarea>
-<p>The two text input areas are &lt;input&gt; with placeholder 1st and 2nd value, a text type, and id firstvalue and secondvalue. Also class inputcenter1 and 3 is used to move each of them to the respected places, class inputsize is used to make the input box larger, and textcalculator is to make the font larger. The code for this in css is </p>
-<textarea>.inputcenter1 {
-    position: relative;
-    top: 40%;
-    left: 20%;
-{
-.inputcenter3 {
-    position: relative;
-    top: 40%;
-    left: 36%;
-}
-.inputsize {
-    width: 200px;
-    height: 100px;
-}
-.textcalculator {
-    font-size: 40px;
-}</textarea>
-<p>Next is to make a &lt;select&gt; with &lt;option&gt; for each possible option. The select will have class inputcenter2 to put the select in the right place. The class textcalculator is used to change the font. There will be 6 options, addition, subtraction, multiplication, division, exponent, and square root and each of them will have values = +, -, x, /, ^, and √. This code will look like </p>
-<textarea>&lt;select class=&quot;inputcenter2 textcalculator&quot; id=&quot;functiondropdown&quot;&gt;
-        &lt;option value=&quot;+&quot;&gt;Addition&lt;/option&gt;
-        &lt;option value=&quot;-&quot;&gt;Subtraction&lt;/option&gt;
-        &lt;option value=&quot;x&quot;&gt;Multiplication&lt;/option&gt;
-        &lt;option value=&quot;/&quot;&gt;Division&lt;/option&gt;
-        &lt;option value=&quot;^&quot;&gt;Exponent&lt;/option&gt;
-        &lt;option value=&quot;&radic;&quot;&gt;Square Root&lt;/option&gt;
-    &lt;/select&gt; </textarea>
-<p>The last part in the HTML is putting a line break after the second input text box and the button that finds the answer to the equation. The button has the class btn-large which is bootstrap to make the button large. Class buttoncenter centers the button and is set to id = equalsbutton with the button saying Answer. This code looks like </p>
-<textarea>&lt;/br&gt;
-        &lt;button class=&quot;btn-lg buttoncenter&quot; id=&quot;equalsbutton&quot;&gt;Answer&lt;/button&gt;</textarea>
-<h2>Now to Javascript</h2>
-<p>The five beginning variables, called var, you need to make are document.getElementById with the id from each of the five aspects from the html, first and second inputs called firstvalue and secondvalue, the &lt;select&gt; called functiondropdown, the span called answeroutput, and the button called equalsbutton. The variable name is the same as the id. The code is called </p>
-<textarea>var firstvalue = document.getElementById(&quot;firstvalue&quot;);
-var secondvalue = document.getElementById(&quot;secondvalue&quot;);
-var functiondropdown = document.getElementById(&quot;functiondropdown&quot;);
-var answeroutput = document.getElementById(&quot;answeroutput&quot;);
-var equalsbutton = document.getElementById(&quot;equalsbutton&quot;);</textarea>
-<p>Next is making the event listener to listen for a click on the button to activate the buttonfunction(). The code for this is </p>
-<textarea>equalsbutton.addEventListener(&quot;click&quot;, buttonfunction);
-</textarea>
-<p>First make two variables inside the function buttonfunction called value1 and value2 that is equal to firstvalue.value and secondvalue.value with parseInt outside the parenthesis. parseInt is used to analyse the string and output an integer which is needed for math operations. This code is </p>
-  <textarea>var value1 = parseInt(firstvalue.value);
-  var value2 = parseInt(secondvalue.value);</textarea>
-<p>Now you need to work on the if and else if statements based on which dropdown option is selected. First is subtraction so you make an if statement in parenthesis with functiondropdown.value equal to - in quotation marks. If the select is set to - then you want it to subtract so you set the two values, value1 and value2 that we made earlier and subtract them to create this math function. Then you need it equal to the output in html so that it puts the answer in the span. This code is </p>
-<textarea> if (functiondropdown.value == &quot;-&quot;){
-        answeroutput.innerHTML = value1 - value2;
-    }</textarea>
-<p>The other simple functions +,x,/ are identical to this except they are else if statements which means also if this happens and the functiondropdown.value == changes to one of these symbols and value1 (the symbol for this action) and value2. The code is </p>
-<textarea>else if  (functiondropdown.value == &quot;+&quot;){
-        answeroutput.innerHTML = value1 + value2;
-    }
-    else if  (functiondropdown.value == &quot;/&quot;){
-        answeroutput.innerHTML = value1 / value2;
-    }
-    else if  (functiondropdown.value == &quot;x&quot;){
-        answeroutput.innerHTML = value1 * value2;
-    }</textarea>
-<p>Finally, you need the last two else if statements for squareroot and exponent. The functiondrop.value will equal &radic; for squareroot because that is the value set in the options and ^ is exponent because that is what is set in the options. answeroutput.innerHTML will be equal to Math.sqrt(value2) because Math.sqrt is the command javascript understands to squareroot a number and value2 is in the inside because that is the box that is going to be used for squareroot. Math.pow(value1, value2) is used for exponent because Math.pow is what javascript understands to exponent something. value1 is to the power of and value2 is the number that is growing exponentially. Then you end the function by putting the end brackets after the last else if statement. The code for these two last lines of code is </p>
-<textarea>else if  (functiondropdown.value == &quot;&radic;&quot;){
-        answeroutput.innerHTML = Math.sqrt(value2);
-    }
-else if  (functiondropdown.value == &quot;^&quot;){
-        answeroutput.innerHTML = Math.pow(value1, value2);
-}</textarea>
+<p class="center thin-gold-border boldtext" id="html1">Inside the html at the top, I have it linked to bootstrap, my mainstyle.css and a link to a special font. This code is </p>
+<div id="divhtml1"></div>
+</br></br></br></br></br>
+<p class="center thin-red-border boldtext" id="html2">Then I added a class to the body to give to the entire page called calculatorbackcolor and the code for it in css is </p>
+<div id="divhtml2"></div>
+</br></br></br></br></br>
+<p class="center thin-gold-border boldtext" id="html3">Next is making the navbar by making an unordered list with line items for each one and has href to link between the different places I have made. The code for the navbar is </p>
+<div id="divhtml3"></div>
+</br></br></br></br></br>
+<p class="center thin-red-border boldtext" id="html4">To make the header for the page I used a h1 with the thin-red-border class and header class. It has align=center to center the text and it has the heading text of dropdown calculator. The css for the effects made to the heading is </p>
+<div id="divhtml4"></div>
+</br></br></br></br></br>
+<p class="center thin-gold-border boldtext" id="html5">A div class of thin-blue-border is made to surround the entire calculator and all of it's contents in a blue border. The css is </p>
+<div id="divhtml5"></div>
+</br></br></br></br></br>
+<p class="center thin-red-border boldtext" id="html6">Next I made a span class with an input inside of it to give it a placeholder of answer while having the answer output to the span. It has many classes inputcenter which centers the span, thinner-black-border adds the border around the span, boldtext is to make the outputting numbers bold, calculatorspan changes the width and height to be the same as the input text size, textcalculator is for the font size, and center is used to center the answer. Then there is a &lt;/br&gt; to make a space between the answerbox and everything else. The css used for the classes are </p>
+<div id="divhtml6"></div>
+</br></br></br></br></br>
+<p class="center thin-gold-border boldtext" id="html7">The two text input areas are &lt;input&gt; with placeholder 1st and 2nd value, a text type, and id firstvalue and secondvalue. Also class inputcenter1 and 3 is used to move each of them to the respected places, class inputsize is used to make the input box larger, and textcalculator is to make the font larger. The code for this in css is </p>
+<div id="divhtml7"></div>
+</br></br></br></br></br>
+<p class="center thin-red-border boldtext" id="html8">Next is to make a &lt;select&gt; with &lt;option&gt; for each possible option. The select will have class inputcenter2 to put the select in the right place. The class textcalculator is used to change the font. There will be 6 options, addition, subtraction, multiplication, division, exponent, and square root and each of them will have values = +, -, x, /, ^, and √. This code will look like </p>
+<div id="divhtml8"></div>
+</br></br></br></br></br>
+<p class="center thin-gold-border boldtext" id="html9">The last part in the HTML is putting a line break after the second input text box and the button that finds the answer to the equation. The button has the class btn-large which is bootstrap to make the button large. Class buttoncenter centers the button and is set to id = equalsbutton with the button saying Answer. This code looks like </p>
+<div id="divhtml9"></div>
+</br></br></br></br></br>
+<h2 class="subheader center">Now to Javascript</h2>
+<p class="center thin-red-border boldtext" id="html10">The five beginning variables, called var, you need to make are document.getElementById with the id from each of the five aspects from the html, first and second inputs called firstvalue and secondvalue, the &lt;select&gt; called functiondropdown, the span called answeroutput, and the button called equalsbutton. The variable name is the same as the id. The code is called </p>
+<div id="divhtml10"></div>
+</br></br></br></br></br>
+<p class="center thin-gold-border boldtext" id="html11">Next is making the event listener to listen for a click on the button to activate the buttonfunction(). The code for this is </p>
+<div id="divhtml11"></div>
+</br></br></br></br></br>
+<p class="center thin-red-border boldtext" id="html12">First make two variables inside the function buttonfunction called value1 and value2 that is equal to firstvalue.value and secondvalue.value with parseInt outside the parenthesis. parseInt is used to analyse the string and output an integer which is needed for math operations. This code is </p>
+<div id="divhtml12"></div>
+</br></br></br></br></br>
+<p class="center thin-gold-border boldtext" id="html13">Now you need to work on the if and else if statements based on which dropdown option is selected. First is subtraction so you make an if statement in parenthesis with functiondropdown.value equal to - in quotation marks. If the select is set to - then you want it to subtract so you set the two values, value1 and value2 that we made earlier and subtract them to create this math function. Then you need it equal to the output in html so that it puts the answer in the span. This code is </p>
+<div id="divhtml13"></div>
+</br></br></br></br></br>
+<p class="center thin-red-border boldtext" id="html14">The other simple functions +,x,/ are identical to this except they are else if statements which means also if this happens and the functiondropdown.value == changes to one of these symbols and value1 (the symbol for this action) and value2. The code is </p>
+<div id="divhtml14"></div>
+</br></br></br></br></br>
+<p class="center thin-gold-border boldtext" id="html15">Finally, you need the last two else if statements for squareroot and exponent. The functiondrop.value will equal &radic; for squareroot because that is the value set in the options and ^ is exponent because that is what is set in the options. answeroutput.innerHTML will be equal to Math.sqrt(value2) because Math.sqrt is the command javascript understands to squareroot a number and value2 is in the inside because that is the box that is going to be used for squareroot. Math.pow(value1, value2) is used for exponent because Math.pow is what javascript understands to exponent something. value1 is to the power of and value2 is the number that is growing exponentially. Then you end the function by putting the end brackets after the last else if statement. The code for these two last lines of code is </p>
+<div id="divhtml15"></div>
+</br></br></br></br></br>
 
 
 </body>
