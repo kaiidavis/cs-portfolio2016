@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+    <link rel="stylesheet" href="mainstyle.css" type="text/css" />
+</head>
+
+<body class="vindiniumbackcolor">
+    <!-- Navbar Starts Here -->
+    <ul id="navbar">
+        <li> <a href="index.html"> About Me </a></li>
+        <li> <a href="hardware.html"> Hardware </a></li>
+        <li> <a href="howto.html"> How To Page </a></li>
+        <li> <a href="calc.html"> Calculator </a></li>
+        <li> <a href="calchowto.html"> Calculator How To Page </a></li>
+        <li> <a href="todolist.html"> Todo List </a></li>
+        <li> <a href="vindhowto.html"> Vindinium </a></li>
+        <li> <a href="#"> Big Project </a></li>
+    </ul>
+    <h1 class="thin-red-border header" align="center">Vindinium</h1>
+    
+<h2 class="headersvind">Describing Vindinium</h2>
+<div class="thinner-black-border-clearbackground"><t class="whitetext boldtext">Vindinium is a multiplayer AI game where you code a bot to do certain functions. 
+The goal of the game is to collect the most gold in the determined amount of turns. 
+Each of the four players can take mines by defeating the goblin guarding it. 
+When a player takes a mine, he becomes the owner and gains 1 gold per turn and has the goblin to guard his mine. 
+Players can fight each other and killing a player lets you take all their mines. 
+The killed player respawns at its spawn point with all its gold but no mines. 
+There are taverns where you can purchase a drink with gold to heal your player. 
+It is won by having the more intelligent bot that can win no matter what randomly generated map you are playing on by getting the most gold in the determined amount of turns. </t></div>
+ <img class="inputcenter2" src="winningscreenshot.png">
+<div class="thinner-black-border-clearbackground captionbackground"><p class="whitetext center boldtext caption">The game shown above shows key aspects of the game, the turns being 1200 in this game, the taverns shown as creme soda, and the mines that are different colors showing who controls it.</p></div>
+ 
+<h2 class="headersvind">Running On Vindinium</h2>
+<div class="thinner-black-border-clearbackground"><p id = "vindhtml1" class = "whitetext boldtext">These commands are the setup of the code. It connects to other index documents that allow the bot to function. The var bot = new Bot is to run on vindinium or a private server. Promise helps to run the code and add as a chain. This code is to get the bot running.</p></div>
+<div id = "divvindhtml1" class = "container center"></div>
+
+<h2 class="headersvind">Global Data Used</h2>
+<div class="thinner-black-border-clearbackground"><p id = "vindhtml2" class = "whitetext boldtext">var myPos will be used later to determine my position. 
+The enemyBots command pushes all the bots coordinates into this variable except your bot which is why it has the if statements to avoid recording your own coordinates.
+The enemyMines command works by looking through each bots mine count besides your bot and concat them, which means a copy of the data is made to be stored in the variable enemyMines.
+var allMines is used to copy (concat) the freeMines cooredinates and combines it with enemyMines coordinates to store in var allMines.</p></div>
+<div id = "divvindhtml2" class = "container center"></div>
+
+<h2 class="headersvind">Coding The AI To Decide What To Do Part 1</h2>
+<div class="thinner-black-border-clearbackground"><p id = "vindhtml3" class = "whitetext boldtext">var task adds this term to global to be used later. This sets var Mines to a base with allMines being zero.
+Then it's the for loop that starts at zero and goes through as many allMines there are with the use of the term i to go through each value.
+The if statement finds the distance between myPos and Mines and sees if it's greater than allMines[i] which makes it choose the closest mine to go to.
+This makes Mines = allMines[i] which will be used later in the code.</p></div>
+<div id = "divvindhtml3" class = "container center"></div>
+
+<h2 class="headersvind">Coding The AI To Decide What To Do Part 2</h2>
+<div class="thinner-black-border-clearbackground"><p id = "vindhtml4" class = "whitetext boldtext">These if statements make the bot understand what to do. 
+The bot.yourBot.life tells it if my bots life is less than 50, it will run task tavern.
+The next if statement is to attack. 
+This runs by looking at my bots health to see if it's between 100 and 30. 
+It also finds the distance and position from myPos to all bots(findbots) and sees if the bot is less than or equal to 2. 
+If all this is true, task attack will activate.
+The next if statement is it counts my bots mines and divides it by every mine in the map (allMines and my mines) and takes the number value using .length.
+It then sees if the answer from this division is greater than or equal to 0.875 to activate the task tavern.</p></div>
+<div id = "divvindhtml4" class = "container center"></div>
+
+<h2 class="headersvind">Describing The How To Do It Code Part 1</h2>
+<div class="thinner-black-border-clearbackground"><p id = "vindhtml5" class = "whitetext boldtext">The first command activates if task is equal to attack.
+It tells me in the console through console log to notify me when this task happens.
+In the AI section of deciding what to do, it already knows the distance between my bot and the enemy bot.
+MyDir is set to the path between myPos and the bot being targeted and uses posArray to find their coordinates.
+Each of the four attack functions next are the same except for each bot.
+It gets the coordinates of bot1 with pos.x and pos.y and then find the path with findPath from myPos to bot1.
+If the task is equal to tavern, this action happens. 
+It sets var findtaverns to a base of zero for bot.taverns. 
+It then runs a for loop, going through each tavern in the map using i and adding 1 each time it runs. 
+It then runs a if statement that finds the distance from myPos to taverns and sees if it's the closest.
+When the if statement is true, it sets findtaverns to the tavern chosen.
+It then console.log to tell me when this command is activated.
+It sets myDir to find a path from myPos to the tavern that was chosen earlier.
+The task freemines is identical to taverns except it uses the command bot.freeMines to find the freemines.</p></div>
+<div id ="divvindhtml5" class="container center"></div>
+
+<h2 class="headersvind">Describing The How To Do Tt Code Part 2</h2>
+<div class="thinner-black-border-clearbackground"><p id = "vindhtml6" class="whitetext boldtext">When the task is allmines, it activates these commands.
+allmines hold both freemines and enemymines coordinates from the global data section.
+It runs myDir to find the path from myPos to Mines which works because of the global data that allows Mines to hold all the coordinates.
+When myDir is nothing, it runs a random command.
+It console logs it when this happens through console.log("going Random!").
+It sets rand to Math.random of four different directions.
+It then sets dirs to north, south, each and west and combines them with dirs[rand].
+This tells it to run the bot in random with goDir. 
+</p></div>
+<div id="divvindhtml6" class="container center"></div>
+
+<h2 class="headersvind">End code to get the bot running</h2>
+<div class="thinner-black-border-clearbackground"><p id ="vindhtml7" class="whitetext boldtext">It resolves the Promise made in the beginning using resolve(). 
+It then runs the game with code bot.runGame()</p></div>
+<div id="divvindhtml7" class="container center"></div>
+
+<h2 class="headersvind">The AI Experience</h2>
+<div class="thinner-black-border-clearbackground"><p class="whitetext boldtext">My bot did what I wanted it to do and the strategy helped me win many rounds of Vindinium. 
+My bots strategy involved a lot of targeting so that it could steal people’s mines and pull through with the win by gaining gold really fast. 
+My code was somewhat complicated because of the mineCount functions that allowed me to target people and get the gold needed to win the game.
+Through making my own AI, I have found that AI is very tedious and every small, basic action needs to be told at every angle. 
+Coding my AI has shown me how complicated it is to code a bot to do the most remedial actions. 
+</p></div>
+       
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+    <!-- Navbar Ends Here -->
+
+</body>
+<script type="text/javascript" src="vindhowto.js"></script>
+</html>

@@ -15,6 +15,10 @@
     font-family: Faster One;
     color: darkblue;
 }
+.headersvind {
+    font-family: Kaushan Script;
+    color: gold;
+}
 
 .smaller-image {
     width: 300px;
@@ -155,6 +159,13 @@
     border-color: #802000;
 }
 
+.imgvind {
+    border: solid 5px transparent;
+}
+
+.imgvind:hover {
+    border-color: #cc7a00;
+}
 .howtobackcolor {
     background-color: #556;
     background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a), linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
@@ -340,4 +351,30 @@ background: linear-gradient(135deg, #708090 22px, #d9ecff 22px, #d9ecff 24px, tr
 linear-gradient(225deg, #708090 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
 background-color:#708090;
 background-size: 64px 128px
+}
+.vindiniumbackcolor {
+background: radial-gradient(black 15%, transparent 16%) 0 0,
+radial-gradient(black 15%, transparent 16%) 8px 8px,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+background-color:#282828;
+background-size:16px 16px;
+}
+
+.caption {
+    width: 600px;
+    position: inherit;
+}
+.captionbackground {
+   width: 600px;
+    position: relative;
+    left: 28%;
+    height: 65px;
+}
+.thinner-black-border-clearbackground {
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 3px;
+    background-color: black
 }

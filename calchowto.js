@@ -1,3 +1,4 @@
+//html1 is used to connect to the first part of the html and divhtml1 is the first div for the html. These two are used to connect the text and the output of the div. 
 var html1 = document.getElementById("html1");
 var divhtml1 = document.getElementById("divhtml1");
 
@@ -44,16 +45,18 @@ var html15 = document.getElementById("html15");
 var divhtml15 = document.getElementById("divhtml15");
 
 
-
+//This states that when the mouse is over the html1 text, this function will happen by listening for the mouseover.
 html1.addEventListener("mouseover", functionhtml1);
 function functionhtml1() {
+  //The textarea is equal to divhtml1.innerHTML because that is where it is outputting. THe textarea has classes to make a black border and choose the amount of rows and columns.
    divhtml1.innerHTML =  "<textarea class='thinner-black-border' rows='4' cols='120'>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css&quot; integrity=&quot;sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u&quot; crossorigin=&quot;anonymous&quot;&gt;  &#10;&lt;link rel=&quot;stylesheet&quot; href=&quot;mainstyle.css&quot; type=&quot;text/css&quot; /&gt; &#10;&lt;link href=&quot;https://fonts.googleapis.com/css?family=Faster+One&quot; rel=&quot;stylesheet&quot;&gt;</textarea>";
 }
+//This listens for a click on the text to get rid of the text which is why there is noting in the parenthesis in divhtml1.innerHTML.
 html1.addEventListener("click", functionouthtml1);
 function functionouthtml1() {
   divhtml1.innerHTML = "";
 }
-
+//Every one after is the same but for all the next sections of the explaination on the calculator with different text in the text area and the html1 and divhtml1 increasing each time.
 html2.addEventListener("mouseover", functionhtml2);
 function functionhtml2() {
    divhtml2.innerHTML =  "<textarea class='thinner-black-border' rows='3' cols='110'>.calculatorbackcolor { background: linear-gradient(315deg, transparent 75%, #d45d55 0)-10px 0, linear-gradient(45deg, transparent 75%, #d45d55 0)-10px 0, linear-gradient(135deg, #a7332b 50%, transparent 0) 0 0, linear-gradient(45deg, #6a201b 50%, #561a16 0) 0 0 #561a16; background-size: 20px 20px; }</textarea>";
