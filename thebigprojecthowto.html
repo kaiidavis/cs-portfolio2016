@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+    <link rel="stylesheet" href="mainstyle.css" type="text/css" />
+</head>
+
+<body class="bigprojectbackcolor">
+    <!-- Navbar Starts Here -->
+    <ul id="navbar">
+        <li> <a href="index.html"> About Me </a></li>
+        <li> <a href="hardware.html"> Hardware </a></li>
+        <li> <a href="howto.html"> How To Page </a></li>
+        <li> <a href="calc.html"> Calculator </a></li>
+        <li> <a href="calchowto.html"> Calculator How To Page </a></li>
+        <li> <a href="todolist.html"> Todo List </a></li>
+        <li> <a href="vindhowto.html"> Vindinium </a></li>
+        <li> <a href="thebigproject.html"> Big Project</a></li>
+        <li> <a href="thebigprojecthowto.html"> Big Project How To</a></li>
+    </ul>
+<h1 class = "thin-red-border header" align = "center">Can You Escape Level 2</h1>
+<h2 class="caption whiteimgbacking">Function LevelTwo()</h2>
+<div id="firstcodediv" class="divright"></div><div class="thin-gold-border caption" id="1stcode"><t class = "boldtext caption">  currentLevel = 2; <br>
+    save();<br>
+    console.log(theCurrentLevel + currentLevel);<br>
+    levelSelectOne.className = "levelOptions";<br>
+    levelSelectTwo.className = "levelOptions";<br>
+    startOptions.className = "hide";</t></div>
+<div id="secondcodediv" class="divright"></div><div class="thinner-black-border-clearbackground caption" id="2ndcode"><t class = "boldtext whitetext caption"> startScreen.innerHTML = "&lt;img class='locklevel2' id='locklevel2' src='./images/locklevel2.png' />";
+    startScreen.innerHTML += "&lt;img class='lock2level2' id='lock2level2' src='./images/locklevel2.png' />";
+    startScreen.innerHTML += "&lt;img class='lock3level2' id='lock3level2' src='./images/locklevel2.png' />";
+    startScreen.innerHTML += "&lt;img class= 'keylevel2' id='keylevel2' src='./images/keylevel2.png' />";
+    startScreen.innerHTML += "&lt;img class= 'key2level2' id='key2level2' src='./images/keylevel2.png' />";
+    startScreen.innerHTML += "&lt;img class= 'key3level2' id='key3level2' src='./images/keylevel2.png' />";
+    startScreen.innerHTML += "&lt;img class='kamikazebackground' id='kamikazebackground' src='./images/1680kamikaze.jpg' />";
+</t></div>
+
+
+<div id="thirdcodediv" class="divright"></div><div class="thin-gold-border caption" id="3rdcode"><t class="boldtext caption">    var locklevel2 = document.getElementById("locklevel2");<br>
+    var lock2level2 = document.getElementById("lock2level2");<br>
+    var lock3level2 = document.getElementById("lock3level2");<br>
+    var keylevel2 = document.getElementById("keylevel2");<br>
+    var key2level2 = document.getElementById("key2level2");<br>
+    var key3level2 = document.getElementById("key3level2");<br>
+    var kamikazebackground = document.getElementById("kamikazebackground");<br>
+    var nextlevel = false;<br>
+    var clicks = 0;</t></div>
+
+
+<div id="fourthcodediv" class="divright"></div><div class="thinner-black-border-clearbackground caption" id="4thcode"><t class="boldtext whitetext">  keylevel2.addEventListener("click", clickkey1);<br>
+    key2level2.addEventListener("click", clickkey2);<br>
+    key3level2.addEventListener("click", clickkey3);<br>
+    locklevel2.addEventListener("click", clicklock1);<br>
+    lock2level2.addEventListener("click", clicklock2);<br>
+    lock3level2.addEventListener("click", clicklock3);<br>
+    kamikazebackground.addEventListener("click", finishedlevel2);</t></div>
+
+<div id="fifthcodediv" class="divright"></div><div class="thin-gold-border caption" id="5thcode"><t class="boldtext caption">    function clickkey1() {<br>
+        console.log("Key Obtained");<br>
+        keylevel2.className = "hide";<br>
+    }<br>
+<br>
+    function clickkey2() {<br>
+        console.log("Key Obtained");<br>
+        key2level2.className = "hide";<br>
+    }<br>
+<br>
+    function clickkey3() {<br>
+        console.log("Key Obtained");<br>
+        key3level2.className = "hide";<br>
+    }<br>
+</t></div>
+
+<div id="sixthcodediv" class="divright"></div><div class="thinner-black-border-clearbackground caption" id="6thcode"><t class="boldtext whitetext caption">    function clicklock2() {<br>
+        if (key2level2.className == "hide") {<br>
+            lock2level2.className = "hide";<br>
+            console.log("Lock opened");<br>
+        }<br>
+    }<br>
+<br>
+    function clicklock3() {<br>
+        if (key3level2.className == "hide") {<br>
+            lock3level2.className = "hide";<br>
+            console.log("Lock opened");<br>
+        }<br>
+    }<br>
+<br>
+    function clicklock1() {<br>
+        if (keylevel2.className == "hide" && key2level2.className == "hide" && key3level2.className == "hide") {<br>
+            clicks += 1;<br>
+        }<br>
+        if (clicks == 5 && keylevel2.className == "hide" && key2level2.className == "hide" && key3level2.className == "hide") {<br>
+            locklevel2.className = "hide";<br>
+            console.log("Hatch Open");<br>
+            nextlevel = true;<br>
+            console.log(clicks);<br>
+        }<br>
+    }</t></div>
+
+    
+<div id="seventhcodediv" class="divright"></div><div class="thin-gold-border caption" id="7thcode"><t class="boldtext caption">    function finishedlevel2() {<br>
+        if (nextlevel == true) {<br>
+            levelThree();<br>
+            console.log("Starting Level 3");<br>
+        }<br>
+    }<br>
+<br>
+}</t></div>
+
+
+
+
+
+    <!-- Navbar Ends Here -->
+
+</body>
+<script type="text/javascript" src="thebigprojecthowto.js"></script>
+</html>    
