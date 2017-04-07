@@ -121,6 +121,7 @@ function levelTwo() {
     levelSelectOne.className = "levelOptions";
     levelSelectTwo.className = "levelOptions";
     startOptions.className = "hide";
+//These add the images in the start screen of level 2
     startScreen.innerHTML = "<img class='locklevel2' id='locklevel2' src='./images/locklevel2.png' />";
     startScreen.innerHTML += "<img class='lock2level2' id='lock2level2' src='./images/locklevel2.png' />";
     startScreen.innerHTML += "<img class='lock3level2' id='lock3level2' src='./images/locklevel2.png' />";
@@ -128,6 +129,7 @@ function levelTwo() {
     startScreen.innerHTML += "<img class= 'key2level2' id='key2level2' src='./images/keylevel2.png' />";
     startScreen.innerHTML += "<img class= 'key3level2' id='key3level2' src='./images/keylevel2.png' />";
     startScreen.innerHTML += "<img class='kamikazebackground' id='kamikazebackground' src='./images/1680kamikaze.jpg' />";
+//This gets the imgs into variables to use in javascript.
     var locklevel2 = document.getElementById("locklevel2");
     var lock2level2 = document.getElementById("lock2level2");
     var lock3level2 = document.getElementById("lock3level2");
@@ -137,6 +139,7 @@ function levelTwo() {
     var kamikazebackground = document.getElementById("kamikazebackground");
     var nextlevel = false;
     var clicks = 0;
+//This listens for a click on each of the images.
     keylevel2.addEventListener("click", clickkey1);
     key2level2.addEventListener("click", clickkey2);
     key3level2.addEventListener("click", clickkey3);
@@ -144,7 +147,7 @@ function levelTwo() {
     lock2level2.addEventListener("click", clicklock2);
     lock3level2.addEventListener("click", clicklock3);
     kamikazebackground.addEventListener("click", finishedlevel2);
-
+//These functions are when the keys or locks are clicked to hide them
     function clickkey1() {
         console.log("Key Obtained");
         keylevel2.className = "hide";
